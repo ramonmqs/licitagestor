@@ -4,7 +4,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
 
-// O Record é um "envelope" leve. As anotações garantem que seu pai não envie campos em branco.
+// O Record é uma estrutura imutável. As anotações garantem que os dados não cheguem vazios da interface.
 public record EditalCaptacaoDTO(
 
         @NotBlank(message = "O número do pregão é obrigatório")

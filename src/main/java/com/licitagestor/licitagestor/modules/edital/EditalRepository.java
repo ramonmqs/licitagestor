@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EditalRepository extends JpaRepository<Edital, Long> {
-    // Só com isso, o Java já sabe fazer CRUD completo da tabela 'editais'
+    // Apenas com essa declaração, o Spring Boot já implementa os comandos de banco de dados (CRUD) por baixo dos panos.
 }
